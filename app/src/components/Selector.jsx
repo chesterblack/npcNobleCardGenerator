@@ -1,26 +1,27 @@
-import { useRouter } from 'next/router';
 import { npcs } from '@/lib/data';
+import { useState } from 'react';
+import NpcMenu from './NpcMenu';
 
 export default function Selector({ npcName, setNpcName }) {
-	const router = useRouter();
-	let options = [];
-
-	for (const [key, npc] of Object.entries(npcs)) {
-		options.push(
-			<option value={key} selected={npcName === key}>
-				{npc.name}
-			</option>
-		);
-	}
+	const [menuOpen, setMenuOpen] = useState(false);
+	const npc = npcs[npcName];
 
 	return (
-		<select
-			onChange={(e) => {
-				setNpcName(e.target.value);
-			}}
-			className="name"
-		>
-			{options}
-		</select>
+		<div className="selector">
+			<div
+				className="name"
+				onClick={() => {
+					setMenuOpen(!menuOpen);
+				}}
+			>
+				{`${npc.title} ${npc.name}`}
+				{npc.nee ? <span className="nee">née {npc.nee}</span> : ''}
+			</div>
+			<NpcMenu
+				setNpcName={setNpcName}
+				menuOpen={menuOpen}
+				setMenuOpen={setMenuOpen}
+			/>
+		</div>
 	);
 }

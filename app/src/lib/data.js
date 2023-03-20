@@ -1,28 +1,39 @@
 const npcs = {
 	luther_rodrig: {
 		name: 'Luther Rodrig',
-		title: 'Baron',
+		rank: 'Baron',
+		title: 'Lord',
 		house: 'anthelm',
 		portrait: '/images/portraits/Rodrig.png',
 	},
+	alrys_rodrig: {
+		name: 'Alrys Rodrig',
+		nee: 'Porenn',
+		rank: 'Baroness',
+		title: 'Lady',
+		house: 'anthelm',
+		portrait: '/images/portraits/Alrys.png',
+	},
 	yorrick_rodrig: {
 		name: 'Yorrick Rodrig',
-		title: 'Vassal',
+		rank: 'Vassal',
+		title: 'Sir',
 		house: 'anthelm',
 		portrait: '/images/portraits/Yorrick.png',
 	},
 	elham_porenn: {
 		name: 'Elham Porenn',
-		title: 'Count',
+		rank: 'Count',
+		title: 'Lord',
 		house: 'drasnia',
 		portrait: '/images/portraits/Porenn.png',
 	},
-	alrys_rodrig: {
-		name: 'Alrys Rodrig',
-		nee: 'Porenn',
-		title: 'Baronness',
-		house: 'anthelm',
-		portrait: '/images/portraits/Alrys.png',
+	wendel_arthas: {
+		name: 'Wendel Arthas',
+		rank: 'Count',
+		title: 'Lord',
+		house: 'ilnoria',
+		portrait: '/images/portraits/Arthas.png',
 	},
 };
 
@@ -36,6 +47,11 @@ const houses = {
 		name: 'Drasnia',
 		color: '#8AB1A1',
 		arms: '/images/arms/Barony_of_Drascoris.png',
+	},
+	ilnoria: {
+		name: 'Ilnoria',
+		color: '#D0C49B',
+		arms: '/images/arms/Barony_of_Ilfin.png',
 	},
 };
 

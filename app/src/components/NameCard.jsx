@@ -9,7 +9,7 @@ export default function NameCard({ npc, house, npcName, setNpcName }) {
 				setNpcName={setNpcName}
 			/>
 			<div className="title">
-				{npc.title} of {house.name}
+				{npc.rank} of {house.name}
 			</div>
 		</div>
 	);
