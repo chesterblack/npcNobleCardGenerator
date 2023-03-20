@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --house-color: #ffffff;
+    font-size: 42px;
+    --card-width: 300px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Bona Nova', serif;
+}
+
+.card {
+    background-color: var(--house-color);
+    max-width: calc(var(--card-width) * 2);
+    width: 100%;
+    max-height: calc(var(--card-width) * 3);
+    height: 100%;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: -7px 11px 22px -15px #00000066;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    border: 3px solid #000000;
+}
+
+.arms {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    max-width: 25%;
+}
+
+.name-card {
+    background-color: #ffffff;
+    border-top: 3px solid #000000;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 25%;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+select {
+    appearance: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    line-height: inherit;
+    text-align: inherit;
+    outline: none;
+    white-space: break-spaces;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select:hover {
+    color: #000000a4;
+}
+
+@media screen and (max-width: 515px) {
+    :root {
+        font-size: 30px;
+        --card-width: 200px
+    }
+
+    .card {
+        border-radius: 10px;
+    }
+}
