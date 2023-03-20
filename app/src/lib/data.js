@@ -41,17 +41,17 @@ const houses = {
 	anthelm: {
 		name: 'Anthelm',
 		color: '#C2A5A4',
-		arms: '/images/arms/Barony_of_Anthelm.png',
+		arms: '/images/arms/Barony_of_Anthelm.svg',
 	},
 	drasnia: {
 		name: 'Drasnia',
 		color: '#8AB1A1',
-		arms: '/images/arms/Barony_of_Drascoris.png',
+		arms: '/images/arms/Barony_of_Drascoris.svg',
 	},
 	ilnoria: {
 		name: 'Ilnoria',
 		color: '#D0C49B',
-		arms: '/images/arms/Barony_of_Ilfin.png',
+		arms: '/images/arms/Barony_of_Ilfin.svg',
 	},
 };
 

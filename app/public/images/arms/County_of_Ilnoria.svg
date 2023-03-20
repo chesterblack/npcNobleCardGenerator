@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="384" height="442" viewBox="0 10 200 200">
+  <defs>
+    <clipPath id="shield_467361828">
+      <path d="m25,25 h150 v50 a150,150,0,0,1,-75,125 a150,150,0,0,1,-75,-125 z"/>
+    </clipPath>
+    <clipPath id="division_467361828">
+      <rect x="100" y="0" width="100" height="200"/>
+    </clipPath>
+    <radialGradient id="backlight" cx="100%" cy="100%" r="150%">
+      <stop stop-color="#fff" stop-opacity=".3" offset="0"/>
+      <stop stop-color="#fff" stop-opacity=".15" offset=".25"/>
+      <stop stop-color="#000" stop-opacity="0" offset="1"/>
+    </radialGradient>
+    <g id="sun" author="Azgaar" license="https://creativecommons.org/publicdomain/zero/1.0">
+      <path stroke-width=".5" d="M84.7 63c-1 3.9.1 7.1 2 10.1 1.5 2.3 2.4 4.8 2.4 7.5-.7.4-1.3.8-1.9 1.2L71.8 71.7l10.4 15.2c-.2.3-.4.5-.5.8-2.9-1.3-5.7-1.6-8.3-1.1-3.7.7-6.9-.1-10.2-2 2.1 3.5 5.1 5 8.6 5.7 2.7.6 5.1 1.7 7 3.6-.2.7-.4 1.5-.5 2.2l-18.1 3.7 18.1 3.5c0 .3.1.6.2.9-3 1.1-5.2 2.9-6.6 5.1-2.1 3.1-4.9 4.8-8.6 5.8 3.9 1 7.1-.1 10.1-2 2.3-1.5 4.8-2.4 7.5-2.4.4.7.8 1.3 1.2 1.9l-10.3 15.5 15.3-10.4c.3.2.5.4.8.5-1.3 2.9-1.6 5.7-1.1 8.3.7 3.7-.1 6.8-2 10.1 3.5-2.1 5-5.1 5.7-8.6.6-2.7 1.7-5.1 3.6-7 .7.2 1.5.4 2.2.5l3.7 18.1 3.5-18.1c.3 0 .6-.1.9-.2 1.1 3 2.9 5.2 5.1 6.6 3.1 2.1 4.8 4.9 5.8 8.6 1-3.9-.1-7.1-2-10.1-1.5-2.3-2.4-4.8-2.4-7.5.7-.4 1.3-.8 1.9-1.2l15.4 10.2-10.4-15.3c.2-.3.4-.5.5-.8 2.9 1.3 5.7 1.6 8.3 1.1 3.7-.7 6.8.1 10.1 2-2.1-3.5-5.1-4.9-8.6-5.7-2.7-.6-5.1-1.7-7-3.6.2-.7.4-1.5.5-2.2l18.1-3.7-18.1-3.5c0-.3-.1-.6-.2-.9 3-1.1 5.2-2.9 6.6-5.1 2.1-3.1 4.9-4.8 8.6-5.7-3.9-1-7.1.1-10.1 2-2.3 1.5-4.8 2.4-7.5 2.4-.4-.7-.8-1.3-1.2-1.9L128 71.6l-15.3 10.3c-.3-.2-.5-.4-.8-.5 1.3-2.9 1.6-5.7 1.1-8.3-.7-3.7.1-6.9 2-10.2-3.5 2.1-4.9 5.1-5.7 8.6-.6 2.7-1.7 5.2-3.7 7-.7-.2-1.5-.4-2.2-.5L100 60l-3.5 18.1c-.3 0-.6.1-.9.2-1.1-3-2.9-5.2-5.1-6.6-3.1-2.1-4.8-4.9-5.7-8.6z"/>
+    </g>
+  </defs>
+  <g clip-path="url(#shield_467361828)">
+    <rect class="field" x="0" y="0" width="200" height="200" fill="#ffe066"/>
+    <g class="division" clip-path="url(#division_467361828)">
+      <rect x="0" y="0" width="200" height="200" fill="#79b4e2"/>
+    </g>
+    <g class="ordinary" i="0" transform="translate(-43 -90) scale(1.45)" fill="#fafafa" stroke="none" stroke-width="1">
+      <rect x="0" y="145" width="200" height="55"/>
+    </g>
+    <g class="ordinary" i="1" fill="#79b4e2" stroke="none" stroke-width="1">
+      <path d="M 80 0 L 80 80 L 0 80 L 0 95 L 80 95 L 80 105 L 0 105 L 0 120 L 80 120 L 80 200 L 95 200 L 95 120 L 105 120 L 105 200 L 120 200 L 120 120 L 200 120 L 200 105 L 120 105 L 120 95 L 200 95 L 200 80 L 120 80 L 120 0 L 105 0 L 105 80 L 95 80 L 95 0 L 80 0 z M 95 95 L 105 95 L 105 105 L 95 105 L 95 95 z"/>
+    </g>
+    <g class="ordinary" i="2" fill="#ffe066" stroke="none" stroke-width="1">
+      <polygon points="85,0 85,85 0,85 0,115 85,115 85,200 115,200 115,115 200,115 200,85 115,85 115,0"/>
+    </g>
+    <g class="charge" i="0" charge="sun" fill="#333333" transform="translate(-4 3)" stroke="#000">
+      <use xlink:href="#sun" transform="translate(6.25 0) scale(0.5)"/>
+    </g>
+  </g>
+  <path class="grad" d="m25,25 h150 v50 a150,150,0,0,1,-75,125 a150,150,0,0,1,-75,-125 z" fill="url(#backlight)" stroke="#000000" stroke-width="3" style="pointer-events: none;"/>
+</svg>
