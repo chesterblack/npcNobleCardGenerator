@@ -136,6 +136,44 @@ main {
     background-color: #e2e2e2;
 }
 
+.info-button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000041;
+    font-style: italic;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 100%;
+    color: #ffffff67;
+    cursor: pointer;
+    z-index: 10;
+    line-height: 0;
+}
+
+.info-button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.info-card {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    padding: 25px;
+}
+
+.info-card.open {
+    display: block;
+}
+
 @media screen and (max-width: 515px) {
     :root {
         font-size: 30px;

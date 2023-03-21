@@ -1,7 +1,7 @@
 import { npcs, houses } from '@/lib/data';
-import CoatOfArms from './CoatOfArms';
 import Portrait from './Portrait';
 import NameCard from './NameCard';
+import InfoButton from './InfoButton';
 
 export default function Card({ npcName, setNpcName }) {
 	if (!npcs[npcName]) {
@@ -17,6 +17,7 @@ export default function Card({ npcName, setNpcName }) {
 				'--house-color': house.color,
 			}}
 		>
+			<InfoButton npcName={npcName} />
 			<Portrait npc={npc} />
 			<NameCard
 				npc={npc}

@@ -6,6 +6,7 @@ const npcs = {
 		title: 'Lord',
 		house: 'anthelm',
 		portrait: '/images/portraits/Rodrig.png',
+		info: "Luther Rodrig is the man who has hired you to cause a ruckus under the disguise of some of Porenn's soldiers",
 	},
 	alrys_rodrig: {
 		firstname: 'Alrys',
@@ -15,6 +16,7 @@ const npcs = {
 		title: 'Lady',
 		house: 'anthelm',
 		portrait: '/images/portraits/Alrys.png',
+		info: 'Wife of Luther Rodrig and sister of Porenn, she knows nothing of the plot and Luther Rodrig would like to keep it that way',
 	},
 	yorrick_rodrig: {
 		firstname: 'Yorrick',
@@ -23,6 +25,7 @@ const npcs = {
 		title: 'Sir',
 		house: 'anthelm',
 		portrait: '/images/portraits/Yorrick.png',
+		info: 'Luther Rodrig\'s uncle. He is going to be "killed" by yourselves under disguise, after which he will go into self-imposed exile and retire somewhere far away',
 	},
 	elham_porenn: {
 		firstname: 'Elham',
@@ -31,6 +34,7 @@ const npcs = {
 		title: 'Lord',
 		house: 'drasnia',
 		portrait: '/images/portraits/Porenn.png',
+		info: "Rodrig's rival, neighbour and brother-in-law. Holds a grudge against Luther as he doesn't think his sister Alrys should've married such a low-ranking noble. Convinced Count Arthas to gift him a parcel of Rodrig's land as revenge",
 	},
 	wendel_arthas: {
 		firstname: 'Wendel',
@@ -39,24 +43,16 @@ const npcs = {
 		title: 'Lord',
 		house: 'ilnoria',
 		portrait: '/images/portraits/Arthas.png',
+		info: "The senile Count of Ilnoria. Arthas is Porenn's equal and Rodrig's liegelord",
 	},
-	long: {
-		firstname: 'Name that goes on for a long time',
-		lastname: '',
-		rank: 'Count',
-		nee: 'also a very long name',
-		title: 'Incredibly Long',
-		house: 'ilnoria',
-		portrait: '/images/portraits/Arthas.png',
-	},
-	short: {
-		firstname: 'short',
-		lastname: '',
-		rank: 'Count',
-		nee: 'b',
-		title: 'b',
-		house: 'ilnoria',
-		portrait: '/images/portraits/Arthas.png',
+	hargreeve_abbot: {
+		firstname: 'Hargreeve',
+		surname: 'Abbot',
+		rank: 'Duke',
+		title: 'Lord',
+		house: 'rencester',
+		portrait: '/images/portraits/Abbot.png',
+		info: "The Duke of Rencester, answering directly to the Queen. Rodrig is convinced that Abbot would step in to prevent all-out civil war in his Duchy should he make a move against Porenn, and would rule in Rodrig's favour when this happens",
 	},
 };
 
@@ -75,6 +71,11 @@ const houses = {
 		name: 'Ilnoria',
 		color: '#D0C49B',
 		arms: '/images/arms/Barony_of_Ilfin.svg',
+	},
+	rencester: {
+		name: 'Rencester',
+		color: '#BFDBF2',
+		arms: '/images/arms/Duchy_of_Rencester.svg',
 	},
 };
 
