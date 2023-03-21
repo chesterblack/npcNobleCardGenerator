@@ -2,13 +2,15 @@ import { npcs } from '@/lib/data';
 import { useState } from 'react';
 import { Textfit } from 'react-textfit';
 import NpcMenu from './NpcMenu';
+import CoatOfArms from './CoatOfArms';
 
-export default function Selector({ npcName, setNpcName }) {
+export default function Selector({ npcName, setNpcName, house }) {
 	const [menuOpen, setMenuOpen] = useState(false);
 	const npc = npcs[npcName];
 
 	return (
 		<>
+			{!menuOpen ? <CoatOfArms house={house} /> : ''}
 			<div
 				className="name"
 				onClick={() => {

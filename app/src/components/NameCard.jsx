@@ -1,11 +1,9 @@
 import Selector from './Selector';
-import CoatOfArms from './CoatOfArms';
 
 export default function NameCard({ npc, house, npcName, setNpcName }) {
 	return (
 		<div className="name-card">
-			<CoatOfArms house={house} />
-			<Selector npcName={npcName} setNpcName={setNpcName} />
+			<Selector npcName={npcName} setNpcName={setNpcName} house={house} />
 			<div className="title">
 				{npc.rank} of {house.name}
 			</div>

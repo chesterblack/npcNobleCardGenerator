@@ -52,7 +52,7 @@ const npcs = {
 		title: 'Lord',
 		house: 'rencester',
 		portrait: '/images/portraits/Abbot.png',
-		info: "The Duke of Rencester, answering directly to the Queen. Rodrig is convinced that Abbot would step in to prevent all-out civil war in his Duchy should he make a move against Porenn, and would rule in Rodrig's favour when this happens",
+		info: "The Duke of Rencester, answers directly to the Queen. Rodrig is convinced that Abbot would step in to prevent all-out civil war in his Duchy should he make a move against Porenn, and would rule in Rodrig's favour when this happens",
 	},
 };
 
