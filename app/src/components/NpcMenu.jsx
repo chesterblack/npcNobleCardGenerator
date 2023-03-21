@@ -26,7 +26,7 @@ export default function NpcMenu({ setNpcName, menuOpen, setMenuOpen }) {
 					handleClick(key);
 				}}
 			>
-				{npc.name}
+				{npc.firstname} {npc.surname}
 			</div>
 		);
 	}

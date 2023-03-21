@@ -1,5 +1,6 @@
 import { npcs } from '@/lib/data';
 import { useState } from 'react';
+import { Textfit } from 'react-textfit';
 import NpcMenu from './NpcMenu';
 
 export default function Selector({ npcName, setNpcName }) {
@@ -7,21 +8,30 @@ export default function Selector({ npcName, setNpcName }) {
 	const npc = npcs[npcName];
 
 	return (
-		<div className="selector">
+		<>
 			<div
 				className="name"
 				onClick={() => {
 					setMenuOpen(!menuOpen);
 				}}
 			>
-				{`${npc.title} ${npc.name}`}
-				{npc.nee ? <span className="nee">née {npc.nee}</span> : ''}
+				<Textfit max={56} mode="single">
+					{`${npc.title} ${npc.firstname} `}
+					<span className="surname">
+						{npc.surname}
+						{npc.nee ? (
+							<span className="nee">née {npc.nee}</span>
+						) : (
+							''
+						)}
+					</span>
+				</Textfit>
 			</div>
 			<NpcMenu
 				setNpcName={setNpcName}
 				menuOpen={menuOpen}
 				setMenuOpen={setMenuOpen}
 			/>
-		</div>
+		</>
 	);
 }

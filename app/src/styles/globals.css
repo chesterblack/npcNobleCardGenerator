@@ -3,7 +3,9 @@
 :root {
     --house-color: #ffffff;
     font-size: 40px;
-    --card-width: 300px;
+    --card-unit: 300px;
+    --card-width: calc(var(--card-unit) * 2);
+    --card-height: calc(var(--card-unit) * 3);
 }
 
 *,
@@ -31,9 +33,9 @@ main {
 
 .card {
     background-color: var(--house-color);
-    max-width: calc(var(--card-width) * 2);
+    max-width: var(--card-width);
     width: 100%;
-    max-height: calc(var(--card-width) * 3);
+    max-height: var(--card-height);
     height: 100%;
     position: relative;
     border-radius: 20px;
@@ -46,19 +48,12 @@ main {
     border: 3px solid #000000;
 }
 
-/* .arms {
-    position: absolute;
-    top: -5px;
-    left: 0;
-    max-width: 25%;
-} */
-
 .arms {
     position: absolute;
     left: 50%;
-    bottom: 25%;
+    top: 0;
     max-width: 25%;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, -50%);
 }
 
 .name-card {
@@ -74,16 +69,37 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
 }
 
 .name {
     font-size: 1.4rem;
     font-weight: bold;
     cursor: pointer;
+    padding: 0 20px;
+    width: var(--card-width);
+    margin-bottom: 15px;
 }
 
 .name:hover {
     color: #000000b7;
+}
+
+.surname {
+    position: relative;
+}
+
+.nee {
+    font-size: 0.5rem;
+    display: block;
+    line-height: 0;
+    margin-bottom: 10px;
+    color: #0000008a;
+    font-weight: normal;
+    font-style: italic;
+    position: absolute;
+    bottom: -15px;
+    right: 0;
 }
 
 .title {
@@ -120,22 +136,10 @@ main {
     background-color: #e2e2e2;
 }
 
-.nee {
-    font-size: 0.5rem;
-    display: block;
-    line-height: 0;
-    margin-bottom: 10px;
-    color: #0000008a;
-    font-weight: normal;
-    font-style: italic;
-    text-align: right;
-    margin-top: 5px;
-}
-
 @media screen and (max-width: 515px) {
     :root {
         font-size: 30px;
-        --card-width: 200px
+        --card-unit: 200px
     }
 
     .card {

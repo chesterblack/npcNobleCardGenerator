@@ -17,7 +17,6 @@ export default function Card({ npcName, setNpcName }) {
 				'--house-color': house.color,
 			}}
 		>
-			<CoatOfArms house={house} />
 			<Portrait npc={npc} />
 			<NameCard
 				npc={npc}
