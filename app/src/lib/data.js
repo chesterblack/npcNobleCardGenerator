@@ -54,7 +54,7 @@ const npcs = {
 		lastname: '',
 		rank: 'Count',
 		nee: 'b',
-		title: 'a',
+		title: 'b',
 		house: 'ilnoria',
 		portrait: '/images/portraits/Arthas.png',
 	},
