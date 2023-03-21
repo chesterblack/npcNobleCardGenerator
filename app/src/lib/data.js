@@ -54,6 +54,15 @@ const npcs = {
 		portrait: '/images/portraits/Abbot.png',
 		info: "The Duke of Rencester, answers directly to the Queen. Rodrig is convinced that Abbot would step in to prevent all-out civil war in his Duchy should he make a move against Porenn, and would rule in Rodrig's favour when this happens",
 	},
+	freida_breion: {
+		firstname: 'Freida',
+		surname: 'Breion',
+		rank: 'Monarch',
+		title: 'Queen',
+		house: 'sundria',
+		portrait: '/images/portraits/Freida.png',
+		info: 'The Queen of entire kingdom of Sundria, recently ascended to the throne after the death of her father. Petty squabbles between her Barons and Counts are unlikely to come to her attention',
+	},
 };
 
 const houses = {
@@ -76,6 +85,11 @@ const houses = {
 		name: 'Rencester',
 		color: '#BFDBF2',
 		arms: '/images/arms/Duchy_of_Rencester.svg',
+	},
+	sundria: {
+		name: 'Sundria',
+		color: '#FFEEEE',
+		arms: '/images/arms/Kingdom_of_Sundria.svg',
 	},
 };
 
