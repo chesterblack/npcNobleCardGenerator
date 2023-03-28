@@ -1,3 +1,5 @@
+const assetsUrl = 'https://npc.fra1.cdn.digitaloceanspaces.com';
+
 const npcs = {
 	luther_rodrig: {
 		firstname: 'Luther',
@@ -5,7 +7,7 @@ const npcs = {
 		rank: 'Baron',
 		title: 'Lord',
 		house: 'anthelm',
-		portrait: '/images/portraits/Rodrig.png',
+		portrait: `${assetsUrl}/portraits/Rodrig.png`,
 		info: "Luther Rodrig is the man who has hired you to cause a ruckus under the disguise of some of Porenn's soldiers",
 	},
 	alrys_rodrig: {
@@ -15,7 +17,7 @@ const npcs = {
 		rank: 'Baroness',
 		title: 'Lady',
 		house: 'anthelm',
-		portrait: '/images/portraits/Alrys.png',
+		portrait: `${assetsUrl}/portraits/Alrys.png`,
 		info: 'Wife of Luther Rodrig and sister of Porenn, she knows nothing of the plot and Luther Rodrig would like to keep it that way',
 	},
 	yorrick_rodrig: {
@@ -24,7 +26,7 @@ const npcs = {
 		rank: 'Vassal',
 		title: 'Sir',
 		house: 'anthelm',
-		portrait: '/images/portraits/Yorrick.png',
+		portrait: `${assetsUrl}/portraits/Yorrick.png`,
 		info: 'Luther Rodrig\'s uncle. He is going to be "killed" by yourselves under disguise, after which he will go into self-imposed exile and retire somewhere far away',
 	},
 	elham_porenn: {
@@ -33,7 +35,7 @@ const npcs = {
 		rank: 'Count',
 		title: 'Lord',
 		house: 'drasnia',
-		portrait: '/images/portraits/Porenn.png',
+		portrait: `${assetsUrl}/portraits/Porenn.png`,
 		info: "Rodrig's rival, neighbour and brother-in-law. Holds a grudge against Luther as he doesn't think his sister Alrys should've married such a low-ranking noble. Convinced Count Arthas to gift him a parcel of Rodrig's land as revenge",
 	},
 	wendel_arthas: {
@@ -42,7 +44,7 @@ const npcs = {
 		rank: 'Count',
 		title: 'Lord',
 		house: 'ilnoria',
-		portrait: '/images/portraits/Arthas.png',
+		portrait: `${assetsUrl}/portraits/Arthas.png`,
 		info: "The senile Count of Ilnoria. Arthas is Porenn's equal and Rodrig's liegelord",
 	},
 	hargreeve_abbot: {
@@ -51,7 +53,7 @@ const npcs = {
 		rank: 'Duke',
 		title: 'Lord',
 		house: 'rencester',
-		portrait: '/images/portraits/Abbot.png',
+		portrait: `${assetsUrl}/portraits/Abbot.png`,
 		info: "The Duke of Rencester, answers directly to the Queen. Rodrig is convinced that Abbot would step in to prevent all-out civil war in his Duchy should he make a move against Porenn, and would rule in Rodrig's favour when this happens",
 	},
 	freida_breion: {
@@ -60,12 +62,27 @@ const npcs = {
 		rank: 'Monarch',
 		title: 'Queen',
 		house: 'sundria',
-		portrait: '/images/portraits/Freida.png',
+		portrait: `${assetsUrl}/portraits/Freida.png`,
 		info: 'The Queen of entire kingdom of Sundria, recently ascended to the throne after the death of her father. Petty squabbles between her Barons and Counts are unlikely to come to her attention',
+	},
+	philon_grey: {
+		firstname: 'Philon',
+		surname: 'Grey',
+		rank: 'Head',
+		title: '',
+		house: 'sundrian_affairs',
+		portrait: `${assetsUrl}/portraits/Philon.png`,
+		info: 'The Head of Sundrian Affairs for the Waterdhavian government. Philon Grey approved your prison release upon completing a task for him, and has been your handler for the unofficial work you have been undertaking for Waterdeep',
 	},
 };
 
 const houses = {
+	sundrian_affairs: {
+		name: 'Sundrian Affairs',
+		color: '#B2B2B2',
+		arms: `${assetsUrl}/arms/Waterdeep.svg`,
+		ruler: 'philon_grey',
+	},
 	anthelm: {
 		name: 'Anthelm',
 		color: '#C2A5A4',
