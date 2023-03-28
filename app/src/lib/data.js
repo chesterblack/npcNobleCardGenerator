@@ -74,11 +74,26 @@ const npcs = {
 		portrait: `${assetsUrl}/portraits/Philon.png`,
 		info: 'The Head of Sundrian Affairs for the Waterdhavian government. Philon Grey approved your prison release upon completing a task for him, and has been your handler for the unofficial work you have been undertaking for Waterdeep',
 	},
+	eronymous_shale: {
+		firstname: 'Eronymous',
+		surname: 'Shale',
+		rank: 'Open Lord',
+		title: 'Lord',
+		house: 'waterdeep',
+		portrait: `${assetsUrl}/portraits/Shale.png`,
+		info: "The new leader of Waterdeep, come to power as a result of the previous Open Lord losing the faith of the Waterdhavian Lord's Council for mishandling the heist case the party were involved in",
+	},
 };
 
 const houses = {
+	waterdeep: {
+		name: 'Waterdeep',
+		color: '#9D919D',
+		arms: `${assetsUrl}/arms/Waterdeep.svg`,
+		ruler: 'eronymous_shale',
+	},
 	sundrian_affairs: {
-		name: 'Sundrian Affairs',
+		name: 'the Department of Sundrian Affairs',
 		color: '#B2B2B2',
 		arms: `${assetsUrl}/arms/Waterdeep.svg`,
 		ruler: 'philon_grey',
