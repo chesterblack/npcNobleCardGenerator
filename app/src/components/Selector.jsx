@@ -12,12 +12,12 @@ export default function Selector({ npcName, setNpcName, house }) {
 		<>
 			{!menuOpen ? <CoatOfArms house={house} /> : ''}
 			<div
-				className="name"
+				className="name white-text-border"
 				onClick={() => {
 					setMenuOpen(!menuOpen);
 				}}
 			>
-				<Textfit max={56} mode="single" className="white-text-border">
+				<Textfit max={56} mode="single">
 					{`${npc.title ?? ''} ${npc.firstname} `}
 					<span className="surname">
 						{npc.surname}
