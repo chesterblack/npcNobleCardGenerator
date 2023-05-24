@@ -17,7 +17,7 @@ export default function Selector({ npcName, setNpcName, house }) {
 					setMenuOpen(!menuOpen);
 				}}
 			>
-				<Textfit max={56} mode="single">
+				<Textfit max={56} mode="single" className="white-text-border">
 					{`${npc.title ?? ''} ${npc.firstname} `}
 					<span className="surname">
 						{npc.surname}
