@@ -83,6 +83,38 @@ const npcs = {
 		portrait: `${assetsUrl}/portraits/Shale.png`,
 		info: "The new leader of Waterdeep, come to power as a result of the previous Open Lord losing the faith of the Waterdhavian Lord's Council for mishandling the heist case the party were involved in",
 	},
+  torvius_kindhur: {
+    firstname: 'Torvius',
+    surname: 'Kindhur',
+    rank: 'Quartermaster',
+    house: 'sundrian_affairs',
+    portrait: `${assetsUrl}/portraits/Torvius.png`,
+    info: "The quartermaster at the DSA. Torvius is a grizzled old tiefling who can obtain magic items for you, or sell your items, without you having to spend a long time searching out potential buyers or bargains"
+  },
+  brav_boartooth: {
+    firstname: 'Brav',
+    surname: 'Boartooth',
+    rank: 'Trainer',
+    house: 'sundrian_affairs',
+    portrait: `${assetsUrl}/portraits/Brav.png`,
+    info: 'Brav Boartooth offers training services in a variety of skills. After spending some time (and money) training with him, you can re-specialise your skills, abilities and proficiencies'
+  },
+  lilianne_etoinette: {
+    firstname: 'Lilianne',
+    surname: 'Etionette',
+    rank: 'Arcane Advisor',
+    house: 'sundrian_affairs',
+    portrait: `${assetsUrl}/portraits/Lilianne.png`,
+    info: "Lilianne was educated at Universitie Lamberque Academe in her homeland of Sontielle. She doesn't offer specific services to members of the DSA, but instead advises and conducts research on all matters arcane"
+  },
+  horke_crawfoot: {
+    firstname: 'Horke',
+    surname: 'Crawfoot',
+    rank: 'Stablemaster',
+    house: 'sundrian_affairs',
+    portrait: `${assetsUrl}/portraits/Horke.png`,
+    info: "Horke looks after the messenger pigeons that are essential to the smooth running of the DSA, in addition to managing the grooms and stablehands that care for the DSA's steeds. He's also taken responsibility for raising the hippogriff foal that Vaughn brought back"
+  },
 };
 
 const houses = {
