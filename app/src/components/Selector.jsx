@@ -18,7 +18,7 @@ export default function Selector({ npcName, setNpcName, house }) {
 				}}
 			>
 				<Textfit max={56} mode="single">
-					{`${npc.title} ${npc.firstname} `}
+					{`${npc.title ?? ''} ${npc.firstname} `}
 					<span className="surname">
 						{npc.surname}
 						{npc.nee ? (
