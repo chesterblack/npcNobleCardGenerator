@@ -115,6 +115,14 @@ const npcs = {
     portrait: `${assetsUrl}/portraits/Horke.png`,
     info: "Horke looks after the messenger pigeons that are essential to the smooth running of the DSA, in addition to managing the grooms and stablehands that care for the DSA's steeds. He's also taken responsibility for raising the hippogriff foal that Vaughn brought back"
   },
+  arblocharde_graussiere: {
+    firstname: 'Arblocharde',
+    surname: 'Graussiere',
+    rank: 'Margrave',
+    house: 'northmark',
+    portrait: `${assetsUrl}/portraits/Arblocharde.png`,
+    info: "Arblocharde Graussiere is the soon-to-be Margrave of Northmark. An alumni of Universitie Lamberque Militare, he has served as advisor to a handful of the gentry in Sundria and is generally well-known and well-liked. He is being set up by the DSA as the inheritor of a small parcel of land in northern Sundria that can serve as an important link between Alfstranr and the west"
+  }
 };
 
 const houses = {
