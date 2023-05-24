@@ -163,6 +163,11 @@ const houses = {
 		color: '#FFEEEE',
 		arms: '/images/arms/Kingdom_of_Sundria.svg',
 	},
+  northmark: {
+    name: 'Northmark',
+    color: '#188A4C',
+    arms: `${assetsUrl}/arms/Northmark.svg`,
+  }
 };
 
 export { npcs, houses };
