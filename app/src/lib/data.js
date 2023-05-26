@@ -135,6 +135,7 @@ const npcs = {
     firstname: 'Julianna',
     surname: 'Freimuller',
     rank: 'Strategist',
+    house: 'sundrian_affairs',
     portrait: `${assetsUrl}/portraits/Julianna.png`,
     info: "Sam Freimuller's younger sister, Julianna is Philon Grey's right hand, advising and acting on many of the political machinations of the department"
   }
