@@ -118,10 +118,25 @@ const npcs = {
   arblocharde_graussiere: {
     firstname: 'Arblocharde',
     surname: 'Graussiere',
-    rank: 'Margrave',
-    house: 'northmark',
+    rank: 'Puppet',
+    house: 'sundrian_affairs',
     portrait: `${assetsUrl}/portraits/Arblocharde.png`,
     info: "Arblocharde Graussiere is the soon-to-be Margrave of Northmark. An alumni of Universitie Lamberque Militare, he has served as advisor to a handful of the gentry in Sundria and is generally well-known and well-liked. He is being set up by the DSA as the inheritor of a small parcel of land in northern Sundria that can serve as an important link between Alfstranr and the west"
+  },
+  samantha_freimuller: {
+    firstname: 'Samantha',
+    surname: 'Freimuller',
+    rank: 'Steward',
+    house: 'sundrian_affairs',
+    portrait: `${assetsUrl}/portraits/Samantha.png`,
+    info: "Samantha Freimuller is the sister of Julianna, and serves as the steward of the department. She wears many hats, leading recruitment, information gathering, supply and logistics - as well as running the tavern front"
+  },
+  julianna_freimuller: {
+    firstname: 'Julianna',
+    surname: 'Freimuller',
+    rank: 'Strategist',
+    portrait: `${assetsUrl}/portraits/Julianna.png`,
+    info: "Sam Freimuller's younger sister, Julianna is Philon Grey's right hand, advising and acting on many of the political machinations of the department"
   }
 };
 
@@ -165,7 +180,7 @@ const houses = {
 	},
   northmark: {
     name: 'Northmark',
-    color: '#188A4C',
+    color: '#5BA87E',
     arms: `${assetsUrl}/arms/Northmark.svg`,
   }
 };
