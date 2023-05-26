@@ -201,6 +201,10 @@ nav {
     gap: 10px;
 }
 
+.white-text-border {
+    text-shadow: 3px -3px white, 3px 3px white, -3px -3px white, -3px 3px white, -3px 0 white, 3px 0 white, 0 3px white, 0 -3px white;
+}
+
 @media screen and (max-width: 515px) {
     :root {
         font-size: 30px;
