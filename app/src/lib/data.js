@@ -138,6 +138,22 @@ const npcs = {
     house: 'sundrian_affairs',
     portrait: `${assetsUrl}/portraits/Julianna.png`,
     info: "Sam Freimuller's younger sister, Julianna is Philon Grey's right hand, advising and acting on many of the political machinations of the department"
+  },
+  hogan_bree: {
+    firstname: 'Hogan',
+    surname: 'Bree',
+    rank: 'Scout',
+    house: 'sundrian_affairs',
+    portrait: `${assetsUrl}/portraits/Hogan.png`,
+    info: "One half of the scouts assigned to you to help out with clearing Northmark of the invading pirates. Hogan is the elder of the two, and has a much more analytical mind than his brother"
+  },
+  haldir_bree: {
+    firstname: 'Haldir',
+    surname: 'Bree',
+    rank: 'Scout',
+    house: 'sundrian_affairs',
+    portrait: `${assetsUrl}/portraits/Haldir.png`,
+    info: "The younger brother of Hogan Bree, Haldir is an expert in stealth, sneaking in and out of the pirate camps to relay information back to his brother and steal supplies"
   }
 };
 
