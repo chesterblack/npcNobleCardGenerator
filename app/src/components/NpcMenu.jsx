@@ -5,13 +5,13 @@ export default function NpcMenu({ setNpcName, menuOpen, setMenuOpen }) {
 	const router = useRouter();
 	let options = [];
 
-	function handleClick(key) {
+	function handleClick(key, cat) {
 		setNpcName(key);
 		setMenuOpen(false);
 
 		router.push(
 			{
-				pathname: `/${key}`,
+				pathname: `/${cat}/${key}`,
 			},
 			undefined,
 			{ shallow: true }
@@ -23,7 +23,7 @@ export default function NpcMenu({ setNpcName, menuOpen, setMenuOpen }) {
 			<div
 				className="option"
 				onClick={() => {
-					handleClick(key);
+					handleClick(key, npc.category);
 				}}
 			>
 				{npc.firstname} {npc.surname}

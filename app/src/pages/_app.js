@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import '@/styles/globals.css';
 import { npcs } from '@/lib/data';
-import MainNav from '@/components/MainNav';
+import MainNav from '@/components/Navs/MainNav';
+import SubNav from '@/components/Navs/SubNav';
 
 export default function App({ Component, pageProps }) {
 	let preloadedImages = [];
@@ -22,6 +23,7 @@ export default function App({ Component, pageProps }) {
 				{preloadedImages}
 			</Head>
 			<MainNav />
+      <SubNav />
 			<Component {...pageProps} />
 		</>
 	);

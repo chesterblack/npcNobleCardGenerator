@@ -5,7 +5,7 @@ module.exports = {
 	async rewrites() {
 		return [
 			{
-				source: '/:npc',
+				source: '/:category/:npc',
 				destination: '/',
 			},
 		];
