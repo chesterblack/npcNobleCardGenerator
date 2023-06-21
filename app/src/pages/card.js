@@ -6,7 +6,6 @@ import NotFound from '@/components/NotFound';
 
 export default function CardPage() {
 	const router = useRouter();
-	const firstNpc = Object.entries(npcs)[0][0];
 
   const [notFound, setNotFound] = useState(false);
 	const [npcName, setNpcName] = useState(false);
@@ -23,13 +22,13 @@ export default function CardPage() {
     };
 	}, [router.query]);
 
-  if (notFound) {
+  if (notFound || !npcName) {
     return <NotFound />;
   }
 
   return (
     <main>
-      <Card npcName={npcName ? npcName : firstNpc} setNpcName={setNpcName} />
+      <Card npcName={npcName} setNpcName={setNpcName} />
     </main>
   );
 }

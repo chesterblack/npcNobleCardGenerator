@@ -41,7 +41,11 @@ export default function Home() {
 
   return (
     <main className="home-page">
-      {categoryLinks}
+      <h1>NPCs</h1>
+      <hr />
+      <div className="link-list">
+        {categoryLinks}
+      </div>
     </main>
   );
 }

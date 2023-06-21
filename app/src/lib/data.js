@@ -11,7 +11,7 @@ const categories = {
   },
   misc: {
     label: 'Miscellaneous',
-    description: "The other characters you have encountered on your adventures."
+    description: "The other characters you have encountered or heard about on your adventures."
   }
 };
 
@@ -105,7 +105,7 @@ const npcs = {
 		house: 'waterdeep',
 		portrait: `${assetsUrl}/portraits/Shale.png`,
 		info: "The new leader of Waterdeep, come to power as a result of the previous Open Lord losing the faith of the Waterdhavian Lord's Council for mishandling the heist case the party were involved in",
-    category: 'dsa',
+    category: 'misc',
 	},
   torvius_kindhur: {
     firstname: 'Torvius',
@@ -188,6 +188,24 @@ const npcs = {
     info: "The younger brother of Hogan Bree, Haldir is an expert in stealth, sneaking in and out of the pirate camps to relay information back to his brother and steal supplies",
     category: 'dsa',
   },
+  ironfell_kobolds: {
+    firstname: 'Ironfell',
+    surname: 'Kobolds',
+    rank: 'Owners',
+    house: 'ironfell',
+    portrait: `${assetsUrl}/portraits/Kobolds.png`,
+    info: "The ten kobold brothers who run the Ironfell mine in Northmark. You're currently doing your best to rescue them from a horde of deepsea kuo-toa and their ghoulish minions",
+    category: 'misc',
+  },
+  palmedes_fry: {
+    firstname: 'Palmedes',
+    surname: 'Fry',
+    rank: 'Agent',
+    house: 'sundrian_affairs',
+    portrait: `${assetsUrl}/portraits/Palmedes.png`,
+    info: "A cleric of Lathander under the employ of the DSA. You requisitioned him as a healer to assist you with the reclamation of Northmark",
+    category: 'dsa',
+  }
 };
 
 const houses = {
@@ -200,7 +218,7 @@ const houses = {
 	sundrian_affairs: {
 		name: 'the Department of Sundrian Affairs',
 		color: '#B2B2B2',
-		arms: `${assetsUrl}/arms/Waterdeep.svg`,
+		arms: `${assetsUrl}/arms/DSA.svg`,
 		ruler: 'philon_grey',
 	},
 	anthelm: {
@@ -234,9 +252,29 @@ const houses = {
     arms: `${assetsUrl}/arms/Northmark.svg`,
   },
   ironfell: {
-    name: 'Ironfell',
-    color: '#eeeeee',
+    name: 'the Ironfell Mines',
+    color: '#a0948c',
+    arms: `${assetsUrl}/arms/Northmark.svg`,
   }
 };
 
-export { npcs, houses, categories };
+const maps = {
+  penninsula: {
+    label: 'The Penninsula',
+    image: `${assetsUrl}/maps/Penninsula.jpg`
+  },
+  sundria: {
+    label: 'Sundria',
+    image: `${assetsUrl}/maps/Sundria.jpg`
+  },
+  northmark: {
+    label: 'Northmark',
+    image: `${assetsUrl}/maps/Northmark.jpg`
+  },
+  rencester: {
+    label: 'Rencester',
+    image: `${assetsUrl}/maps/Rencester.jpg`
+  },
+};
+
+export { npcs, houses, categories, maps };

@@ -205,7 +205,25 @@ main {
 }
 
 .map {
-    max-height: 750px;
+    max-height: 800px;
+    margin-top: 20px;
+    box-shadow: -5px 8px 22px -10px #00000066;
+    border: 3px solid #ffffff;
+}
+
+hr {
+    height: 5px;
+    border: none;
+    background-color: #000;
+    width: 100%;
+}
+
+.link-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 nav {
@@ -264,9 +282,14 @@ nav {
     border-bottom: 2px solid #000;
 }
 
-.subnav a:hover,
+.subnav a:hover {
+    border-bottom-style: dashed;
+}
+
 .subnav a.active {
     border-bottom-style: dashed;
+    font-style: italic;
+    font-weight: bold;
 }
 
 .white-text-border {
@@ -286,6 +309,7 @@ nav {
 }
 
 .list-button {
+    text-align: center;
     display: block;
     position: relative;
     color: #000;
@@ -360,8 +384,12 @@ nav {
     }
     
     .list-button {
-        padding: 15px 10px 5px;
+        padding: 5px 10px;
         border-radius: 10px;
         font-size: 24px;
+    }
+
+    .list-button.has-arms {
+        padding: 15px 10px 5px;
     }
 }
