@@ -50,7 +50,7 @@ main {
     background-color: var(--house-color);
     max-width: var(--card-width);
     width: 100%;
-    /* max-height: var(--card-height); */
+    max-height: var(--card-height);
     height: 100%;
     position: relative;
     border-radius: 20px;
