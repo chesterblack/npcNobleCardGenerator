@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
-    --house-color: #ffffff;
+    --house-color: #f3f3f3;
     font-size: 40px;
-    --card-unit: 300px;
+    --card-unit: 280px;
     --card-width: calc(var(--card-unit) * 2);
     --card-height: calc(var(--card-unit) * 3);
 }
@@ -16,10 +16,19 @@
 
 body {
     margin: 0;
+    font-family: 'Bona Nova', serif;
+}
+
+.page-wrapper {
+    display: flex;
 }
 
 img {
     max-width: 100%;
+}
+
+h1 {
+    margin: 0;
 }
 
 main {
@@ -27,25 +36,31 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    min-height: calc(100vh - 80px);
     font-family: 'Bona Nova', serif;
+    width: 100%;
+    padding: 70px 55px 0;
+}
+
+.has-subnav main {
+    padding-left: 355px;
 }
 
 .card {
     background-color: var(--house-color);
     max-width: var(--card-width);
     width: 100%;
-    max-height: var(--card-height);
+    /* max-height: var(--card-height); */
     height: 100%;
     position: relative;
     border-radius: 20px;
-    box-shadow: -7px 11px 22px -15px #00000066;
+    box-shadow: -5px 8px 22px -10px #00000066;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
     overflow: hidden;
-    border: 3px solid #000000;
+    /* border: 3px solid #000000; */
 }
 
 .arms {
@@ -190,19 +205,168 @@ main {
 }
 
 .map {
-    max-height: 750px;
+    max-height: 800px;
+    margin-top: 20px;
+    box-shadow: -5px 8px 22px -10px #00000066;
+    border: 3px solid #ffffff;
+}
+
+hr {
+    height: 5px;
+    border: none;
+    background-color: #000;
+    width: 100%;
+}
+
+.link-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 nav {
-    position: absolute;
-    top: 0;
-    left: 20px;
     display: flex;
+}
+
+.main-nav {
+    font-size: initial;
+    position: fixed;
+    top: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #9d6c48;
     gap: 10px;
+    z-index: 10;
+}
+
+.main-nav button {
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    padding: 5px 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: #ffffff;
+    border-radius: 100px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-family: 'Bona Nova', serif;
+    font-weight: bold;
+}
+
+.main-nav button:hover {
+    background-color: #ffffffb4;
+}
+
+.subnav {
+    position: fixed;
+    flex-direction: column;
+    padding: 70px 20px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 3px 0px 14px -10px #000;
+    gap: 20px;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 9;
+}
+
+.subnav a {
+    font-size: 32px;
+    color: #000;
+    text-decoration: none;
+    line-height: 28px;
+    border-bottom: 2px solid #000;
+}
+
+.subnav a:hover {
+    border-bottom-style: dashed;
+}
+
+.subnav a.active {
+    border-bottom-style: dashed;
+    font-style: italic;
+    font-weight: bold;
 }
 
 .white-text-border {
     text-shadow: 3px -3px white, 3px 3px white, -3px -3px white, -3px 3px white, -3px 0 white, 3px 0 white, 0 3px white, 0 -3px white;
+}
+
+.category-page h1,
+.category-description {
+    text-align: center;
+}
+
+.category-characters {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.list-button {
+    text-align: center;
+    display: block;
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    padding: 15px;
+    /* border: 3px solid #000; */
+    box-shadow: 4px 4px 20px -6px #00000066;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.list-button:hover {
+    background-color: var(--house-color);
+}
+
+.list-button .arms {
+    width: 45px;
+}
+
+.home-page .list-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.home-page .arms {
+    position: static;
+    transform: none;
+}
+
+@media screen and (max-width: 970px) {
+    .has-subnav main {
+        padding: 140px 30px;
+    }
+
+    .subnav {
+        flex-direction: row;
+        max-width: none;
+        white-space: nowrap;
+        height: auto;
+        padding: 70px 20px 15px;
+        overflow-x: scroll;
+    }
+
+    .list-button.has-arms {
+        padding-top: 20px;
+        display: flex;
+        padding: 5px 10px 5px 5px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .list-button .arms {
+        position: static;
+        transform: none;
+    }
 }
 
 @media screen and (max-width: 515px) {
@@ -213,5 +377,19 @@ nav {
 
     .card {
         border-radius: 10px;
+    }
+
+    .category-characters {
+        gap: 10px;
+    }
+    
+    .list-button {
+        padding: 5px 10px;
+        border-radius: 10px;
+        font-size: 24px;
+    }
+
+    .list-button.has-arms {
+        padding: 15px 10px 5px;
     }
 }

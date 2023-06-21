@@ -2,15 +2,12 @@ import Link from 'next/link';
 
 export default function MainNav({}) {
 	return (
-		<nav>
+		<nav className='main-nav'>
 			<Link href="/">
 				<button>NPCs</button>
 			</Link>
-			<Link href="/map">
-				<button>Map</button>
-			</Link>
-			<Link href="/org-chart">
-				<button>Org Chart</button>
+			<Link href="/maps">
+				<button>Maps</button>
 			</Link>
 		</nav>
 	);
