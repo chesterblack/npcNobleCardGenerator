@@ -3,16 +3,29 @@ const assetsUrl = 'https://npc.fra1.cdn.digitaloceanspaces.com';
 const categories = {
   dsa: {
     label: 'The DSA',
+    description: "The Department of Sundrian Affairs is a clandestine organisation run by Philon Grey for the Waterdhavian government. It's goal is to use the kingdom of Sundria as a foothold to expand into neighbouring Alfstranr.",
   },
   sundrian_nobles: {
     label: "Sundrian Nobles",
+    description: "The feudal society of Sundria means there is a host of landed nobility that own the overwhelming majority of the land in the kingdom. Each noble is in a ordered hierarchy - the kingdom is split into duchies, which are then split into counties, which are then even further split into baronies."
   },
   misc: {
-    label: 'Misc',
+    label: 'Miscellaneous',
+    description: "The other characters you have encountered on your adventures."
   }
 };
 
 const npcs = {
+  philon_grey: {
+		firstname: 'Philon',
+		surname: 'Grey',
+		rank: 'Head',
+		title: '',
+		house: 'sundrian_affairs',
+		portrait: `${assetsUrl}/portraits/Philon.png`,
+		info: 'The Head of the Department Sundrian Affairs for the Waterdhavian government. Philon Grey approved your prison release upon completing a task for him, and has been your handler for the unofficial work you have been undertaking for Waterdeep ever since',
+    category: 'dsa',
+	},
 	luther_rodrig: {
 		firstname: 'Luther',
 		surname: 'Rodrig',
@@ -83,16 +96,6 @@ const npcs = {
 		portrait: `${assetsUrl}/portraits/Freida.png`,
 		info: 'The Queen of entire kingdom of Sundria, recently ascended to the throne after the death of her father. Petty squabbles between her Barons and Counts are unlikely to come to her attention',
     category: 'sundrian_nobles',
-	},
-	philon_grey: {
-		firstname: 'Philon',
-		surname: 'Grey',
-		rank: 'Head',
-		title: '',
-		house: 'sundrian_affairs',
-		portrait: `${assetsUrl}/portraits/Philon.png`,
-		info: 'The Head of Sundrian Affairs for the Waterdhavian government. Philon Grey approved your prison release upon completing a task for him, and has been your handler for the unofficial work you have been undertaking for Waterdeep',
-    category: 'dsa',
 	},
 	eronymous_shale: {
 		firstname: 'Eronymous',

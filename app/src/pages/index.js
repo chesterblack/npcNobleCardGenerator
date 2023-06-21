@@ -7,8 +7,9 @@ import NotFound from '@/components/NotFound';
 export default function Home() {
 	const router = useRouter();
 	const firstNpc = Object.entries(npcs)[0][0];
-	const [npcName, setNpcName] = useState(firstNpc);
+
   const [notFound, setNotFound] = useState(false);
+	const [npcName, setNpcName] = useState(false);
 
 	useEffect(() => {
     if (router.query.category) {
@@ -24,11 +25,11 @@ export default function Home() {
 
   if (notFound) {
     return <NotFound />;
-  } else {
-    return (
-      <main>
-        <Card npcName={npcName} setNpcName={setNpcName} />
-      </main>
-    );
   }
+
+  return (
+    <main>
+      <Card npcName={npcName ? npcName : firstNpc} setNpcName={setNpcName} />
+    </main>
+  );
 }

@@ -9,6 +9,7 @@ export default function SubNav() {
 
   switch(router.pathname) {
     case "/":
+    case "/category":
       pageNav = <NpcSubNav />;
       break;
     case "/map":

@@ -8,6 +8,10 @@ module.exports = {
 				source: '/:category/:npc',
 				destination: '/',
 			},
+			{
+				source: '/:category',
+				destination: '/category',
+			},
 		];
 	},
 };

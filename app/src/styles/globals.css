@@ -205,6 +205,13 @@ nav {
     text-shadow: 3px -3px white, 3px 3px white, -3px -3px white, -3px 3px white, -3px 0 white, 3px 0 white, 0 3px white, 0 -3px white;
 }
 
+.subnav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    max-width: 300px;
+}
+
 @media screen and (max-width: 515px) {
     :root {
         font-size: 30px;
