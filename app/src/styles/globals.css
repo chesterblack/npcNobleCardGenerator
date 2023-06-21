@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
-    --house-color: #ffffff;
+    --house-color: #f3f3f3;
     font-size: 40px;
     --card-unit: 280px;
     --card-width: calc(var(--card-unit) * 2);
@@ -39,7 +39,11 @@ main {
     min-height: calc(100vh - 80px);
     font-family: 'Bona Nova', serif;
     width: 100%;
-    padding: 80px 55px 55px 355px;
+    padding: 70px 55px 0;
+}
+
+.has-subnav main {
+    padding-left: 355px;
 }
 
 .card {
@@ -50,13 +54,13 @@ main {
     height: 100%;
     position: relative;
     border-radius: 20px;
-    box-shadow: -7px 11px 22px -15px #00000066;
+    box-shadow: -5px 8px 22px -10px #00000066;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
     overflow: hidden;
-    border: 3px solid #000000;
+    /* border: 3px solid #000000; */
 }
 
 .arms {
@@ -249,6 +253,7 @@ nav {
     gap: 20px;
     height: 100vh;
     background-color: #ffffff;
+    z-index: 9;
 }
 
 .subnav a {
@@ -277,29 +282,43 @@ nav {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 25px;
+    gap: 15px;
 }
 
-.category-character {
+.list-button {
     display: block;
     position: relative;
     color: #000;
     text-decoration: none;
     padding: 15px;
-    border: 3px solid #000;
+    /* border: 3px solid #000; */
+    box-shadow: 4px 4px 20px -6px #00000066;
     border-radius: 15px;
+    margin-top: 20px;
 }
 
-.category-character:hover {
+.list-button:hover {
     background-color: var(--house-color);
 }
 
-.category-character .arms {
+.list-button .arms {
     width: 45px;
 }
 
+.home-page .list-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.home-page .arms {
+    position: static;
+    transform: none;
+}
+
 @media screen and (max-width: 970px) {
-    main {
+    .has-subnav main {
         padding: 140px 30px;
     }
 
@@ -310,6 +329,19 @@ nav {
         height: auto;
         padding: 70px 20px 15px;
         overflow-x: scroll;
+    }
+
+    .list-button.has-arms {
+        padding-top: 20px;
+        display: flex;
+        padding: 5px 10px 5px 5px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .list-button .arms {
+        position: static;
+        transform: none;
     }
 }
 
@@ -327,10 +359,9 @@ nav {
         gap: 10px;
     }
     
-    .category-character {
+    .list-button {
         padding: 15px 10px 5px;
         border-radius: 10px;
         font-size: 24px;
-        margin-top: 15px;
     }
 }

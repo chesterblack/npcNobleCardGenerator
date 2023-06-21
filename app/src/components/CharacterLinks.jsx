@@ -1,22 +1,17 @@
 import { npcs, houses } from "@/lib/data";
-import Link from "next/link";
-import CoatOfArms from "./CoatOfArms";
+import ListButton from "./ListButton";
 
 export default function CharacterLinks({category}) {
   let links = [];
   for (const [key, npc] of Object.entries(npcs)) {
     if (npc.category === category) {
       links.push(
-        <Link
-          className="category-character"
+        <ListButton
           href={`${category}/${key}`}
-          style={{
-            '--house-color': houses[npc.house].color
-          }}
+          house={houses[npc.house]}
         >
-          <CoatOfArms house={houses[npc.house]} />
           {npc.firstname} {npc.surname}
-        </Link>
+        </ListButton>
       );
     }
   }

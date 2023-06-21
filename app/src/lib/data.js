@@ -16,6 +16,16 @@ const categories = {
 };
 
 const npcs = {
+  freida_breion: {
+		firstname: 'Freida',
+		surname: 'Breion',
+		rank: 'Monarch',
+		title: 'Queen',
+		house: 'sundria',
+		portrait: `${assetsUrl}/portraits/Freida.png`,
+		info: 'The Queen of entire kingdom of Sundria, recently ascended to the throne after the death of her father. Petty squabbles between her Barons and Counts are unlikely to come to her attention',
+    category: 'sundrian_nobles',
+	},
   philon_grey: {
 		firstname: 'Philon',
 		surname: 'Grey',
@@ -85,16 +95,6 @@ const npcs = {
 		house: 'rencester',
 		portrait: `${assetsUrl}/portraits/Abbot.png`,
 		info: "The Duke of Rencester, answers directly to the Queen. Rodrig is convinced that Abbot would step in to prevent all-out civil war in his Duchy should he make a move against Porenn, and would rule in Rodrig's favour when this happens",
-    category: 'sundrian_nobles',
-	},
-	freida_breion: {
-		firstname: 'Freida',
-		surname: 'Breion',
-		rank: 'Monarch',
-		title: 'Queen',
-		house: 'sundria',
-		portrait: `${assetsUrl}/portraits/Freida.png`,
-		info: 'The Queen of entire kingdom of Sundria, recently ascended to the throne after the death of her father. Petty squabbles between her Barons and Counts are unlikely to come to her attention',
     category: 'sundrian_nobles',
 	},
 	eronymous_shale: {

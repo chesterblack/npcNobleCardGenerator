@@ -6,7 +6,7 @@ module.exports = {
 		return [
 			{
 				source: '/:category/:npc',
-				destination: '/',
+				destination: '/card',
 			},
 			{
 				source: '/:category',

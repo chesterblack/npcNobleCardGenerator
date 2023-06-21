@@ -1,8 +1,10 @@
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import '@/styles/globals.css';
 import { npcs } from '@/lib/data';
 import MainNav from '@/components/Navs/MainNav';
-import SubNav from '@/components/Navs/SubNav';
+import NpcSubNav from '@/components/Navs/NpcSubNav';
+import MapSubNav from '@/components/Navs/MapSubNav';
 
 export default function App({ Component, pageProps }) {
 	let preloadedImages = [];
@@ -11,6 +13,26 @@ export default function App({ Component, pageProps }) {
 			<link rel="preload" href={npc.portrait} as="image" />
 		);
 	}
+
+  const router = useRouter();
+  let pageNav;
+  switch(router.pathname) {
+    case "/category":
+    case "/card":
+      pageNav = <NpcSubNav />;
+      break;
+    case "/map":
+      pageNav = <MapSubNav />;
+      break;
+    default:
+      pageNav = '';
+      break;
+  }
+
+  let pageClasses = 'page-wrapper';
+  if (pageNav !== '') {
+    pageClasses += ' has-subnav';
+  }
 
 	return (
 		<>
@@ -22,9 +44,9 @@ export default function App({ Component, pageProps }) {
 				/>
 				{preloadedImages}
 			</Head>
-      <div className='page-wrapper'>
+      <div className={pageClasses}>
         <MainNav />
-        <SubNav />
+        {pageNav}
         <Component {...pageProps} />
       </div>
 		</>

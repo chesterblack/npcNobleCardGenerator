@@ -1,35 +1,47 @@
-import { useEffect, useState } from 'react';
-import { npcs, categories } from '@/lib/data';
-import Card from '@/components/Card';
-import { useRouter } from 'next/router';
-import NotFound from '@/components/NotFound';
+import CoatOfArms from "@/components/CoatOfArms";
+import ListButton from "@/components/ListButton";
+import { categories, houses, npcs } from "@/lib/data";
 
 export default function Home() {
-	const router = useRouter();
-	const firstNpc = Object.entries(npcs)[0][0];
+  let categoryLinks = [];
+  for (const [key, category] of Object.entries(categories)) {
+    let categoryArms = [];
 
-  const [notFound, setNotFound] = useState(false);
-	const [npcName, setNpcName] = useState(false);
-
-	useEffect(() => {
-    if (router.query.category) {
-      if (router.query.npc) {
-        if (router.query.category === npcs[router.query.npc]?.category) {
-          setNpcName(router.query.npc);
-        } else {
-          setNotFound(true);
+    for (const [npcKey, npc] of Object.entries(npcs)) {
+      if (categoryArms.length < 2) {
+        if (
+          npc.category === key &&
+          !categoryArms.includes(houses[npc.house])
+        ) {
+          categoryArms.push(houses[npc.house]);
         }
       }
-    };
-	}, [router.query]);
+    }
 
-  if (notFound) {
-    return <NotFound />;
+    if (categoryArms.length == 1) {
+      categoryArms[1] = categoryArms[0];
+    }
+
+    if (categoryArms.length < 1) {
+      categoryLinks.push(
+        <ListButton href={`/${key}`}>
+          {category.label}
+        </ListButton>
+      )
+    } else {
+      categoryLinks.push(
+        <ListButton href={`/${key}`}>
+          <CoatOfArms house={categoryArms[0]} />
+          <span>{category.label}</span>
+          <CoatOfArms house={categoryArms[1]} />
+        </ListButton>
+      )
+    }
   }
 
   return (
-    <main>
-      <Card npcName={npcName ? npcName : firstNpc} setNpcName={setNpcName} />
+    <main className="home-page">
+      {categoryLinks}
     </main>
   );
 }
