@@ -9,7 +9,11 @@ export default function NpcSubNav() {
   for (const [key, category] of Object.entries(categories)) {
     let classes = router.query.category === key ? 'active' : '';
 
-    links.push(<Link href={`/${key}`} className={classes}>{category.label}</Link>);
+    links.push(
+      <Link href={`/${key}`} className={classes}>
+        {category.label}
+      </Link>
+    );
   }
 
   return (

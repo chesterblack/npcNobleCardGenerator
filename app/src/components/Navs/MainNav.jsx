@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function MainNav({}) {
 	return (
-		<nav>
+		<nav className='main-nav'>
 			<Link href="/">
 				<button>NPCs</button>
 			</Link>

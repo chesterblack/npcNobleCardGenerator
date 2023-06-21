@@ -21,7 +21,7 @@ export default function Category() {
   return (
     <main className="category-page">
         <h1>{activeCategory.label}</h1>
-        <p>{activeCategory.description ?? ''}</p>
+        <p className="category-description">{activeCategory.description ?? ''}</p>
         <CharacterLinks category={router.query.category} />
     </main>
   );

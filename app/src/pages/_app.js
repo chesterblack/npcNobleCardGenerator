@@ -22,9 +22,11 @@ export default function App({ Component, pageProps }) {
 				/>
 				{preloadedImages}
 			</Head>
-			<MainNav />
-      <SubNav />
-			<Component {...pageProps} />
+      <div className='page-wrapper'>
+        <MainNav />
+        <SubNav />
+        <Component {...pageProps} />
+      </div>
 		</>
 	);
 }
