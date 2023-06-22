@@ -345,6 +345,10 @@ nav {
 }
 
 @media screen and (max-width: 970px) {
+    :root {
+        font-size: 32px;
+    }
+
     .has-subnav main {
         padding: 140px 30px;
     }
@@ -374,7 +378,7 @@ nav {
 
 @media screen and (max-width: 515px) {
     :root {
-        font-size: 30px;
+        font-size: 25px;
         --card-unit: 200px
     }
 
