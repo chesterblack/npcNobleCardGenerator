@@ -50,7 +50,7 @@ main {
     background-color: var(--house-color);
     max-width: var(--card-width);
     width: 100%;
-    max-height: var(--card-height);
+    /* max-height: var(--card-height); */
     height: 100%;
     position: relative;
     border-radius: 20px;
@@ -79,7 +79,7 @@ main {
     width: 100%;
     min-height: 25%;
     text-align: center;
-    padding: 50px 30px 20px;
+    padding: 50px 30px 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,7 +93,9 @@ main {
     cursor: pointer;
     padding: 0 20px;
     width: var(--card-width);
+    max-width: 100%;
     margin-bottom: 15px;
+    line-height: 85%;
 }
 
 .name:hover {
@@ -120,6 +122,7 @@ main {
 .title {
     font-size: 1rem;
     font-style: italic;
+    line-height: 90%;
 }
 
 .npc-menu {
